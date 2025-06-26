@@ -2,7 +2,6 @@
   "name": "caseydwayne.github.io",
   "version": "0.1.0",
   "description": "GitHub Portfolio/Resume Site",
-  "main": "src/index.js",
   "scripts": {
     "dev": "parcel src/index.pug",
     "build": "parcel build src/index.pug --dist-dir dist"
@@ -10,6 +9,10 @@
   "author": "Casey Dwayne <2025@caseydwayne.com>",
   "license": "UNLICENSED",
   "devDependencies": {
-    "@parcel/transformer-pug": "^2.15.4"
+    "@parcel/transformer-pug": "^2.15.4",
+    "@parcel/transformer-sass": "^2.15.4"
+  },
+  "dependencies": {
+    "@parcel/config-default": "^2.15.4"
   }
 }
