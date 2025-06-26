@@ -10,10 +10,5 @@ export default defineConfig({
   root: 'src',
   build: {
     outDir: '../dist',
-    rollupOptions: {
-      input: {
-        main: 'src/index.pug'
-      }
-    }
   }
 })
