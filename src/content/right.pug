@@ -5,19 +5,5 @@ p Hello. I am a full stack web developer/software engineer.
   | This is a currated selection.
   //- I prefer 70% frontend 30% back but I'm mostly indifferent (just don't put me in a dark box doing nothing but backend development for weeks on end)
     
-+project({
-  title: 'MLS GUI',
-  description: `
-    A simple command center for controlling Puppeteer and "Scraper". 
-    It uses SolidJS on the frontend and Express, Puppeteer, and Socket.io on the back. The front and back are completely separated in /src/ to keep things tidy. It uses event-driven architecture with buttons powered by "commands" (like page::refresh) and updates through appropriate hooks. Nothing too fancy, just a way to control and monitor scrapes as they progress. 
-    `,
-  techs: 'SolidJS Vite Socket.io Nodemon Sass Tailwind Express Puppeteer'.split(' ')
-})
-+project({
-  title: 'MLS Updater',
-  description: `
-    A database interchange module that . 
-    `,
-  techs: 'JavaScript MySQL'.split(' ')
-})
-+project()
+for project in projects 
+  +project( project )
