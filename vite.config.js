@@ -1,10 +1,10 @@
 import { defineConfig } from 'vite'
-import pugPlugin from 'vite-plugin-pug'
+import vitePugPlugin from 'vite-plugin-pug-transformer'
 
 const locals = {} // optional: pass in variables
 
 export default defineConfig({
-  plugins: [ pugPlugin( { pugLocals: locals, pretty: true } ) ],
+  plugins: [ vitePugPlugin( { pugLocals: locals, pugOptions: { pretty: true } } ) ],
   root: 'src',
   build: {
     outDir: '../dist',

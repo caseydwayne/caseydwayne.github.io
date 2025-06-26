@@ -2,6 +2,7 @@
   "name": "caseydwayne.github.io",
   "version": "0.2.0",
   "description": "GitHub Portfolio/Resume Site",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build"
@@ -11,6 +12,6 @@
   "devDependencies": {
     "pug": "^3.0.3",
     "vite": "^6.0.0",
-    "vite-plugin-pug": "^0.4.1"
+    "vite-plugin-pug-transformer": "^1.0.7"
   }
 }
