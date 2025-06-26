@@ -11,6 +11,7 @@
   "license": "UNLICENSED",
   "devDependencies": {
     "pug": "^3.0.3",
+    "sass-embedded": "^1.89.2",
     "vite": "^6.0.0",
     "vite-plugin-pug-transformer": "^1.0.7"
   }
