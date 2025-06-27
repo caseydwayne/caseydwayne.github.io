@@ -1,5 +1,5 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css);
-@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&amp;family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&amp;display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&amp;family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Courgette&amp;display=swap);
 
 
 $dark: #000;
@@ -7,22 +7,31 @@ $lite: #FFF;
 $c1: #FFBC13;
 $c2: #00EA43;
 
+$ff1: 'Montserrat', sans-serif;
+$ff2: 'Open Sans', sans-serif;
+$ff3: 'Courgette', cursive;
+
+.ff3 { font-family: $ff3; }
+
 html, body {
+  width: 100%;
+  width: 100vw;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 body {
   background: $dark;
   color: $lite;
   font-size: 10px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $ff2;
   overflow: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1em;
   margin-bottom: 1rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $ff1;
 }
 h1 { 
   font-size: 3.8em; 
@@ -44,6 +53,8 @@ a {
 }
 img {
   max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 strong {
   font-weight: 600;
@@ -77,7 +88,9 @@ em {
   height:240px;
   background:white;
   border-radius: 0.618rem;
-  overflow: hidden;
+  overflow: hidden;  
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 1.618rem;  
   background: url(media/headshot.jpg) center no-repeat;
   background-size: 110%;
@@ -91,21 +104,38 @@ em {
 
 .project {
   box-shadow: 0 0 1px rgba( $c1, .004 );
+  display: grid;
+  grid-template-columns: 420px auto;
+  grid-template-areas:
+    "image title"
+    "image description"
+    "image techs";
+  gap: 0rem 1.618rem;
   padding: 1rem;
   margin: 0 0 2.618rem;
-  display: flex;
   &:hover, &:focus {
     box-shadow: 0 0 1px rgba( $c1, .75 );
   }
   .image {
-    margin-right: 1rem;
     width: 100%;
-    max-width: 300px;
+    // max-width: 300px;
+    grid-area: image;
   } 
   .title {
-    font-size: 2.618em;
+    font-size: 2.618em;    
+    grid-area: title;
+  }
+  .description {
+    grid-area: description;
+  }
+  .techs {
+    width: 100%;
+    grid-area: techs;
+    // display: flex;
   }
   .tech {
+    // flex: 1 0 100px;
+    min-width: fit-content;
     background: $dark;
     padding: 0.618rem;
     color: $lite;
@@ -149,4 +179,71 @@ em {
     background-color: rgba( $color, $alpha ); /* keep opacity the same */
   }
 
+}
+
+
+@media (min-width: 1500px){
+  .project {
+    
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1499px){
+  .project {
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+      "image title"
+      "image description"
+      "techs techs";
+  }
+}
+
+@media (max-width: 1199px){
+  .project {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    grid-template-areas:
+      "title"
+      "image"
+      "description"
+      "techs";
+  }
+}
+
+@media (max-width: 800px){
+  body {
+    overflow-y: visible;
+  }
+  .main {
+    // flex-direction: column;
+    display: block;
+    width: 100%;
+    width: 100dvw;
+    height: auto;
+    // background: red;
+  }
+  .left, .right { 
+    flex-grow: 1;
+  }
+  .left {
+    border-right: none;
+    border-bottom: 1px solid $c1;
+    margin: auto;
+    text-align: center;;
+    // padding: 0;
+
+  }
+  .right {
+    // flex-grow: 0;
+    overflow-y: visible;
+  }
+  .project {
+    &  > * {
+      min-width: 0;      
+    }
+    .image {
+      margin-right: auto;      
+    }
+
+  }
 }

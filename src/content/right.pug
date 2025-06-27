@@ -1,15 +1,35 @@
 include ../mixins/project.pug
 
-p Hello. I am a full stack web developer/software engineer. 
-  | I have a created many tools, websites, and applications. 
-  | This is a currated selection.
-  //- I prefer 70% frontend 30% back but I'm mostly indifferent (just don't put me in a dark box doing nothing but backend development for weeks on end)
+div(style='padding-top:1rem')
+
+  h3
+    span.ff3(style="font-size:1.618rem") Welcome! 
+  p 
+    
+    | I am a full stack web developer/software engineer. 
+    | This curated collection of tools and applications is an extension of my resume. 
+    // submitting for my job search. 
+    //- | This collection of tools and applications is for job hunting. 
+  //-
+    | I have a created many tools, websites, and applications. 
+    | This is a currated selection.
+    //- I prefer 70% frontend 30% back but I'm mostly indifferent (just don't put me in a dark box doing nothing but backend development for weeks on end)
     
 for project in projects 
-  +project( project )
+  if !project.hidden
+    +project( project )
 
-p(style='text-align:right') ...and honestly a 
-  strong lot 
-  |  more. This is just a showcase for 
-  em hopefully
-  |  finding a developer role in 2025.  
+div(style='text-align:right') 
+
+  p ...and there's honestly a 
+    strong lot 
+    |  more. 
+  //- 
+    This is just a showcase for 
+    em hopefully
+    |  finding a developer role in 2025.  
+  p 
+    | Visit 
+    a(href="https://projects.caseydwayne.com" target="_blank") 
+      | https://projects.caseydwayne.com
+    |  for websites. 
