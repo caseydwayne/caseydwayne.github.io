@@ -11,7 +11,7 @@
 export default [
   {
     title: 'MLS GUI',
-    image: '',
+    image: 'mls-gui-ai',
     description: `
       A simple command center for controlling Puppeteer and "Scraper". 
       It uses SolidJS on the frontend and Express, Puppeteer, and Socket.io on the back. 
@@ -24,7 +24,7 @@ export default [
   },
   {
     title: 'MLS Updater',
-    image: 'A database interchange module tha',
+    image: 'mls-updater-ai',
     description: `
       A Node.js service for syncing scraped MLS listing data to the database. 
       It provides realtime quality assurance, checking if a listing exists, executing INSERT or UPDATE depending, 
@@ -36,7 +36,7 @@ export default [
   },
   {
     title: 'MLS App',
-    image: '',
+    image: 'mls-app',
     description: `
       A Vue (3) application. Mixed use of Options vs Composition API based on need. 
       Uses Firebase for the user system/authentication layer. 
@@ -47,7 +47,7 @@ export default [
   },
   {
     title: 'Package Organizer',
-    image: '',
+    image: 'marketing-app',
     description: `
       A tool for managing dozens to hundreds of packages that change every 3 months or so. 
       Client needed a way for their call staff to be able to reference quickly, as well as 
@@ -58,7 +58,7 @@ export default [
   },
   {
     title: 'Reviews API',
-    image: '',
+    image: 'reviews-api',
     description: `
       A custom aggregator that replaced a $250/mo SaaS my client had been paying into for years. 
       Takes reviews via APIs from Zillow, Google, Facebook, etc. and stores them in a database. 
@@ -80,7 +80,7 @@ export default [
   },
   {
     title: 'CSS Monster',
-    image: '',
+    image: 'css-monster-ai',
     description: `
       A utility-first SCSS library for rapid prototyping. Built WAY before Tailwind started trending. 
       Largely abandoned because it makes otherwise clean markup look like speghetti code. 
@@ -91,7 +91,7 @@ export default [
   },
   {
     title: 'The DSB',
-    image: '',
+    image: 'dsb-ai-customized',
     description: `
       The Dynamic Site Builder started out as just a modular way to build websites. Originally in PHP, 
       ported to Node and enhanced in 2014. Creates a streamlined development platform with some "standards" 
@@ -102,7 +102,7 @@ export default [
   },
   {
     title: 'Sassy',
-    image: '',
+    image: 'sassy',
     description: `
       An open-source contribution. Sassy was developed during my rewrite of Monster. 
       Frustrated with the limitations of logic in Sass I developed this utility library 

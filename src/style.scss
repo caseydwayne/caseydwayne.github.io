@@ -42,6 +42,9 @@ a {
     color: darken( $c1, 6 )
   }
 }
+img {
+  max-width: 100%;
+}
 strong {
   font-weight: 600;
 }
@@ -76,7 +79,7 @@ em {
   border-radius: 0.618rem;
   overflow: hidden;
   margin-bottom: 1.618rem;  
-  background: url(headshot.jpg) center no-repeat;
+  background: url(media/headshot.jpg) center no-repeat;
   background-size: 110%;
   box-shadow: 
     inset 0 0 20px 3px rgba( $dark, .9 )
@@ -96,6 +99,8 @@ em {
   }
   .image {
     margin-right: 1rem;
+    width: 100%;
+    max-width: 300px;
   } 
   .title {
     font-size: 2.618em;
