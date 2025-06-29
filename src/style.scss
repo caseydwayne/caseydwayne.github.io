@@ -132,6 +132,7 @@ em {
     width: 100%;
     grid-area: techs;
     // display: flex;
+    
   }
   .tech {
     // flex: 1 0 100px;
@@ -195,6 +196,9 @@ em {
       "image title"
       "image description"
       "techs techs";
+    .techs {
+      display: flex;
+    }
   }
 }
 
