@@ -231,7 +231,7 @@ em {
     margin: auto;
     text-align: center;;
     // padding: 0;
-
+    padding-top: 6.18rem;
   }
   .right {
     // flex-grow: 0;
@@ -244,6 +244,19 @@ em {
     .image {
       margin-right: auto;      
     }
+    .techs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem 1.618rem;
+      .tech {
+        margin-right: 0;        
+      }
+    }
+  }
+}
 
+@media (max-width: 800px){
+  .left {
+    padding-top: 2.618rem;
   }
 }
