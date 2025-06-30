@@ -19,7 +19,7 @@ export default [
       Contains many tweaks you probably wouldn't even notice (unless they weren't there) for a better user experience. 
       Heavily optimized. Mobile friendly. 
     `,
-    techs: 'Vue Firebase GoogleMaps Vite'.split(' '),
+    techs: 'Vue, Firebase, Google Maps, Vite'.split(', '),
     link: 'https://mls.alexsellrichmond.com',
     linkText: 'Check it out!'
   },
@@ -45,7 +45,7 @@ export default [
       It uses SolidJS on the frontend and Express, Puppeteer, and Socket.io on the back. 
       The front and back are completely separated in /src/ to keep things tidy. 
       It uses event-driven architecture with buttons powered by "commands" (like page::refresh) 
-      and updates through appropriate hooks. 
+      and updates through appropriate hooks (web sockets). 
       Nothing too fancy, just a way to control and monitor scrapes as they progress. 
     `,
     techs: 'SolidJS Vite Socket.io Nodemon Sass Tailwind Express Puppeteer'.split(' ')
@@ -80,10 +80,10 @@ export default [
     title: 'CSS Monster',
     image: 'css-monster-ai',
     description: `
-      A utility-first SCSS library for rapid prototyping. Built WAY before Tailwind started trending. 
+      A utility-first SCSS library for rapid prototyping. Built WAY before Tailwind started trending (circa 2013). 
       Largely abandoned because it makes otherwise clean markup look like speghetti code. 
       Intended to create a better solution in JS but discontinued it because the DSB is not as needed 
-      in the age of Vue, Vite, SolidJS, etc. Still, impressive for it's time IMO (circa 2013). 
+      in the age of Vue, Vite, SolidJS, etc. Still, impressive for it's time IMO. 
     `,
     techs: 'Sassy Sass'.split(' ')
   },
@@ -109,11 +109,11 @@ export default [
       A powerful, portable interface for editing websites using an interface. 
       Connected other parts of my Content Mangagement System such as BLISS (WYSIWYG editor that used Monster), 
       File Manager, Database Manager, and more. Had a drag and drop system with minimize, maximize/restore, close buttons at top. 
-      Built in calculator. Show Desktop button. UI is basically a ripoff of Windows XP. 
+      Built in calculator. Show Desktop button. 
     `,
     techs: [ 'JavaScript', 'PHP', 'CSS', 'MySQL', 'TinyMCE' ],
     link: 'https://vimeo.com/101086230',
-    linkText: 'Proof via video'
+    linkText: 'Proof via video.'
   },
 
   {
@@ -135,8 +135,9 @@ export default [
       A custom aggregator that replaced a $250/mo SaaS my client had been paying into for years. 
       Takes reviews via APIs from Zillow, Google, Facebook, etc. and stores them in a database. 
       Reviews are served in the front (in batches) with seamless animation that appears as infinite scroll. 
+      Client-facing Angular frontend for authentication and administering updates. 
     `,
-    techs: 'MySQL, APIs, OAuth 2.0, Lazy Loading, Infinite Scroll'.split(', '),
+    techs: 'MySQL, APIs, Angular, OAuth 2.0, Lazy Loading, Infinite Scroll'.split(', '),
     hidden: !true
   },
 
