@@ -20,7 +20,7 @@ export default [
       Heavily optimized. Mobile friendly. 
     `,
     techs: 'Vue, Firebase, Google Maps, Vite'.split(', '),
-    link: 'https://mls.alexsellrichmond.com',
+    link: 'https://mls.alexsellsrichmond.com/',
     linkText: 'Check it out!'
   },
 
@@ -138,7 +138,8 @@ export default [
       Client-facing Angular frontend for authentication and administering updates. 
     `,
     techs: 'MySQL, APIs, Angular, OAuth 2.0, Lazy Loading, Infinite Scroll'.split(', '),
-    hidden: !true
+    link: 'https://www.alexsellsrichmond.com/reviews#portfolio-anchor',
+    linkText: 'View the public portion.'
   },
 
   {
