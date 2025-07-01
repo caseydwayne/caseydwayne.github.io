@@ -1,6 +1,8 @@
 doctype html
 html
+
   head
+
     title A GitHub Portfolio/Resume Site By Casey Dwayne
 
     meta(name="http-equiv" content="content-type")
@@ -14,18 +16,11 @@ html
     meta(name="priority" content="100")
     meta(name="changefreq" content="weekly")  
 
+    meta(name="google-site-verification" content="8m0jpbIblDiFB6wiObHZw2mfAfWVBd9-UICT5R1cvgk")
+
     link(rel="icon" type="image/x-icon" href="./favicon.ico")
 
     link(href='./style.scss' rel='stylesheet')
-
-  body
-    .main
-      .left
-        include ./content/left.pug
-      .right
-        include ./content/right.pug
-        
-    script( type='module', src='./script.js' )
 
     // Google tag (gtag.js)
     script(async src="https://www.googletagmanager.com/gtag/js?id=G-KS110LC88Z")
@@ -34,6 +29,18 @@ html
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-KS110LC88Z');
+
+  body
+  
+    .main
+      .left
+        include ./content/left.pug
+      .right
+        include ./content/right.pug
+        
+    script( type='module', src='./script.js' )
+
+
 
 
 
